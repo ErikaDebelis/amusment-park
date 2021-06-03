@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  const height = parseInt(prompt("How tall are you in inches?"));
+  $("#height").submit(function(event) {
+    event.preventDefault();
+    const height = parseInt(prompt("How tall are you in inches?")); 
 
   if (height =< 54) {
     $('#too-short').show();
